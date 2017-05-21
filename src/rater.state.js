@@ -38,8 +38,7 @@ function raterState(state = initialState, action) {
     case SORT_TILES:
       return {
         ...state,
-        tiles: state.tiles.sort((t1, t2) => t1.rating < t2.rating),
-        orderByRating: state.tiles.map(tile => tile.id)
+        orderByRating: state.tiles.sort((t1, t2) => t2.rating - t1.rating).map(tile => tile.id)
       };
     default:
       return state;

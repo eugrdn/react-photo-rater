@@ -36,7 +36,7 @@ class Tile extends Component {
 
     return (
       <div className='tile-item' style={style}>
-        <span className='tile-rank'>{rating}</span>
+        <span className='tile-rank' style={{ backgroundColor: rating > 0 ? '#3ce135' : rating < 0 ? '#ee3021' : '#f7f7f7' }}>{rating}</span>
         <img
           className='tile-photo'
           src={photo}
