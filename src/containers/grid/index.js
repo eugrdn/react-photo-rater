@@ -1,2 +1,2 @@
 export { default as Grid } from './grid';
-export { default as state } from './grid.reducer';
+export { default as gridState } from './grid.reducer';
