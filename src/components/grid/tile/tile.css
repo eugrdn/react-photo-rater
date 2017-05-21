@@ -1,6 +1,5 @@
 .tile-item{
   text-align: center;
-  position: absolute;
   transition: left .5s, top .5s, opacity .1s, transform .1s;
   box-shadow: 0 14px 28px rgba(0,0,0,.5), 0 10px 10px rgba(0,0,0,.5);
 }
@@ -11,10 +10,6 @@
 
 .tile-item:active {
   transform: scale(.9);
-}
-
-.tile-item-actiive {
-
 }
 
 .tile-rank {
@@ -29,6 +24,7 @@
 }
 
 .tile-photo{
-    border-radius: 1px;
-    cursor: pointer;
+  border-radius: 1px;
+  background-size: contain;
+  cursor: pointer;
 }

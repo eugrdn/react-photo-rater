@@ -5,11 +5,6 @@ import Tile from '../tile/tile';
 import './row.css';
 
 class Row extends Component {
-
-  // shouldComponentUpdate(nextProps) {
-  //   return JSON.stringify(nextProps.tiles.map(t=>({id: t.id, rating: t.rating}))) !== JSON.stringify(this.props.tiles.map(t=>({id: t.id, rating: t.rating})))
-  // }
-
   render() {
     const { tiles, size: { row, tile } } = this.props;
 
