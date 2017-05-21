@@ -43,7 +43,7 @@ class TileGrid extends Component {
       width: window.innerWidth,
       height: window.innerHeight
     };
-    
+
     const gridProportions = TileGridService.getScaleByWindow(windowScale);
 
     this.props.resizeGrid(gridProportions);
@@ -87,7 +87,7 @@ class TileGrid extends Component {
     const { isFetching, tiles, tilesOrder, grid } = this.props;
 
     if (isFetching) {
-      return <Loading />;
+      return <Loading speed={200} />;
     }
 
     const rowsCount = TileGridService.caclulateRowsCount(tilesOrder.length);
