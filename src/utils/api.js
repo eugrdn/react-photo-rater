@@ -1,16 +1,15 @@
 import shortid from 'shortid';
 import mockData from '../example/mock.data';
 
-function fetchPhotos(url) {
-  return fetch(url)
-    .catch(handleError);
+function fetchPhotos() {
+  return Promise.resolve(mockData);
 }
-// for dev
+
 function createTiles(photos) {
-  return mockData.map(photo => ({
+  return photos.map(photo => ({
     id: shortid.generate(),
     photo,
-    rating: Math.ceil(Math.random() * 19)
+    rating: Math.ceil(Math.random() * 10) - 3
   }));
 }
 
