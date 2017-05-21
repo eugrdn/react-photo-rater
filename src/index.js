@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './app';
 import registerServiceWorker from './registerServiceWorker';
+import { Provider } from 'react-redux';
 
-import './index.css';
+import Rater from './rater';
+import store from './rater.state';
 
 ReactDOM.render(
-  <App />,
+  <Provider store={store}>
+    <Rater />
+  </Provider>,
   document.getElementById('root')
 );
 
