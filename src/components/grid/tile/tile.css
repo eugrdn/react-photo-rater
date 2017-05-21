@@ -1,4 +1,4 @@
-.tile-item{
+.tile-item {
   text-align: center;
   transition: left .5s, top .5s, opacity .1s, transform .1s;
   box-shadow: 0 14px 28px rgba(0,0,0,.5), 0 10px 10px rgba(0,0,0,.5);
@@ -23,7 +23,8 @@
   color: #000;
 }
 
-.tile-photo{
+.tile-photo {
+  object-fit: cover;
   border-radius: 1px;
   background-size: contain;
   cursor: pointer;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import Tile from '../tile/tile';
 
@@ -24,5 +25,10 @@ class Row extends Component {
     );
   }
 };
+
+Row.propTypes = {
+  tiles: PropTypes.array.isRequired,
+  size: PropTypes.object.isRequired
+}
 
 export default Row;
