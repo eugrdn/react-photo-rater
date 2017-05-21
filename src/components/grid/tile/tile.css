@@ -1,0 +1,19 @@
+.tile-item{
+  /*width: 250px;*/
+  position: relative;
+  text-align: center;
+  border: 1px solid #fff;
+}
+
+.tile-rank{
+  display: block;
+  position: absolute;
+  font-weight: bold;
+  text-align: left;
+  font-size: 1em;
+}
+
+.tile-photo{
+
+}
+

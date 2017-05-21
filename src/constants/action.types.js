@@ -5,3 +5,5 @@ export const INC_RATING = 'inc_rating';
 export const DEC_RATING = 'dec_rating';
 
 export const SORT_TILES = 'sort_tiles';
+
+export const RESIZE_GRID = 'resize_grid';
