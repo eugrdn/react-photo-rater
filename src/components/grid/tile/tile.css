@@ -12,6 +12,21 @@
   transform: scale(.9);
 }
 
+
+.animates-appear {
+  opacity: 0.01;
+  -webkit-transform: scale(0.0, 0.0);
+  -moz-transform: scale(0.0, 0.0);
+  transform: scale(0.0, 0.0);
+}
+
+.animates-appear.animates-appear-active {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  transition: transform 300ms ease-in;
+}
+
 .tile-rank {
   display: block;
   width: 30px;
