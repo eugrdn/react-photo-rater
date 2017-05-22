@@ -38,7 +38,7 @@ class Tile extends Component {
 
     return (
       <ReactCSSTransitionGroup
-        transitionName="example"
+        transitionName='animates'
         transitionAppear={true}
         transitionAppearTimeout={500}
         transitionEnter={true}
