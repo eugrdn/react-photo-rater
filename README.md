@@ -3,4 +3,4 @@ React-Photo-Rater
 
 ### Preview
 
-![here](https://eugrdn.github.io/react-photo-rater/)
+[here](https://eugrdn.github.io/react-photo-rater/)
