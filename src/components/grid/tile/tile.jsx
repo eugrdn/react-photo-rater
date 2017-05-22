@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 import {
   incTileRating,
   decTileRating,
@@ -35,17 +37,24 @@ class Tile extends Component {
     const { photo, rating, style } = this.props;
 
     return (
-      <div className='tile-item' style={style}>
-        <span className='tile-rank' style={{ backgroundColor: rating > 0 ? '#3ce135' : rating < 0 ? '#ee3021' : '#f7f7f7' }}>{rating}</span>
-        <img
-          className='tile-photo'
-          src={photo}
-          alt={photo}
-          onClick={this.handlePictureClick}
-          onContextMenu={this.handlePictureClick}
-          style={style}
-        />
-      </div>
+      <ReactCSSTransitionGroup
+        transitionName='animates'
+        transitionAppear={true}
+        transitionAppearTimeout={500}
+        transitionEnter={true}
+        transitionLeave={true}>
+        <div className='tile-item' style={style}>
+          <span className='tile-rank' style={{ backgroundColor: rating > 0 ? '#3ce135' : rating < 0 ? '#ee3021' : '#f7f7f7' }}>{rating}</span>
+          <img
+            className='tile-photo'
+            src={photo}
+            alt={photo}
+            onClick={this.handlePictureClick}
+            onContextMenu={this.handlePictureClick}
+            style={style}
+          />
+        </div>
+      </ReactCSSTransitionGroup>
     );
   }
 };
