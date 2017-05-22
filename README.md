@@ -1,2 +1,6 @@
-# react-photo-rater
-Test task
+React-Photo-Rater
+=================
+
+### Preview
+
+![here](https://eugrdn.github.io/react-photo-rater/)
